@@ -22,6 +22,12 @@
     },
     "core-features-todos": {
       "tags": []
+    },
+    "ionic": {
+      "tags": []
+    },
+    "ionic-e2e": {
+      "tags": []
     }
   }
 }

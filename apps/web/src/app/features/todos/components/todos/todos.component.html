@@ -1,7 +1,4 @@
 <h1>{{title}}</h1>
-<p>
-  todos works!
-</p>
-<ul *ngFor="let todo of todos$|async">
-  <li>{{todo.title}}</li>
+<ul>
+  <li *ngFor="let todo of todos$|async">{{todo.title}}</li>
 </ul>

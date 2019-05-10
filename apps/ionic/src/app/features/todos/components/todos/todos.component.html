@@ -9,9 +9,9 @@
 <ion-content>
   <ion-list>
     <ion-item *ngFor="let todo of todos$|async">
-      <ion-title>
+      <ion-label>
         {{todo.title}}
-      </ion-title>
+      </ion-label>
     </ion-item>
   </ion-list>
 </ion-content>

@@ -6,32 +6,58 @@
     <ion-title>MyApp</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content padding>
-  <div style="text-align:center">
-    <h1>Welcome to {{ title }}!</h1>
-    <img
-      width="450"
-      src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png"
-    />
-  </div>
-
-  <p>This is an Angular app built with <a href="https://nx.dev">Nx</a>.</p>
-  <p>🔎 **Nx is a set of Angular CLI power-ups for modern development.**</p>
-
-  <h2>Quick Start & Documentation</h2>
-
-  <ul>
-    <li>
-      <a href="https://nx.dev/getting-started/what-is-nx"
-        >30-minute video showing all Nx features</a
-      >
-    </li>
-    <li>
-      <a href="https://nx.dev/tutorial/01-create-application"
-        >Interactive tutorial</a
-      >
-    </li>
-  </ul>
-  <hr>
-  <p>Navigate to `Todos` Features Module <a [routerLink]="['/todos']">go to todos module</a></p>
+<ion-content>
+  <ion-grid padding-horizontal padding-top>
+    <ion-row text-center margin-bottom>
+      <ion-col>
+        <ion-title margin>Welcome to {{ title }}!</ion-title>
+        <img
+          height="280"
+          src="../assets/images/ionic-icon.png"
+        />        
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-text>
+          This is an Angular app built with <a href="https://nx.dev">Nx</a>.
+        </ion-text>
+        <ion-text>
+            🔎 **Nx is a set of Angular CLI power-ups for modern development.**
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-title no-padding margin-top>
+          Nx Quick Start & Documentation
+        </ion-title>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-list no-padding padding-horizontal padding-bottom>
+    <ion-item>
+      <ion-text>
+        <a href="https://nx.dev/getting-started/what-is-nx">
+          30-minute video showing all Nx features
+        </a>
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text>
+        <a href="https://nx.dev/tutorial/01-create-application">
+          Interactive tutorial
+        </a>
+      </ion-text>
+    </ion-item>
+  </ion-list>
+  <ion-grid padding>
+    <ion-row>
+      <ion-col>
+        <ion-text>
+            Navigate to `Todos` Features Module <a [routerLink]="['/todos']">go to todos module</a>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

@@ -8,7 +8,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
 
-  public title = 'web';
+  public title = 'Web Platform';
 
   constructor() { }
 
